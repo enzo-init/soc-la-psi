@@ -1,0 +1,14 @@
+.content {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    align-items: center;
+    padding: 3vw;
+    .personal-info-1, .personal-info-2 {
+        font-size: 1vw;
+    }
+}
