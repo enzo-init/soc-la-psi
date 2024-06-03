@@ -5,8 +5,8 @@ import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'quien-soy', component: PersonalInfoComponent},
-    {path: 'servicios', component: ServicesComponent},
-    {path: 'contacto', component: ContactComponent}
+    // {path: '', component: HomeComponent},
+    // {path: 'quien-soy', component: PersonalInfoComponent},
+    // {path: 'servicios', component: ServicesComponent},
+    // {path: 'contacto', component: ContactComponent}
 ];

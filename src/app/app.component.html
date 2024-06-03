@@ -1,28 +1,108 @@
-<div class="nav-bar">
-  <p-tabView (onChange)="navigateView($event)" [activeIndex]="activeTab">
-    <p-tabPanel header="Inicio"> </p-tabPanel>
-    <p-tabPanel header="¿Quien soy?"> </p-tabPanel>
-    <p-tabPanel header="Servicios"> </p-tabPanel>
-    <p-tabPanel header="Contacto"> </p-tabPanel>
-  </p-tabView>
+<section class="home">
+  <div class="content">
+    <div class="name">
+      <h1>SOFIA CAMILO PSICOLOGIA</h1>
+    </div>
+    <div class="description">
+      <h2>Desarrollo infantil</h2>
+      <h2>Acompañamiento familiar</h2>
+      <h2>Psicoterapia</h2>
+    </div>
+  </div>
+</section>
+
+<section class="personal-info">
+  <div class="content">
+    <div class="personal-info-1">
+      <h2>¿Quien soy?</h2>
+      <h3>
+        Mi nombre es Sofía, soy psicóloga general sanitaria (Col. Nº G-5477) y mi especialidad se
+        centra en la población pediátrica y adolescente, también en el trabajo familiar y
+        psicoterapéutico.
+              Me apasiona la psicología, especialmente el desarrollo infantil y el acompañamiento emocional
+              tan importante y necesario a realizar con todas aquellas familias que lleguen a mí.
+          </h3>
+        </div>
+        <div>
+          IMAGEN
+        </div>
+        <div>
+          IMAGEN
+        </div>
+        <div class="personal-info-2">
+          <h2>Experiencia y formación</h2>
+          <h3>
+            Si quieres saber un poco más acerca de mi experiencia y formación, aquí tienes algunos datos:
+            <h3>Formación:</h3>
+            
+            <ul>
+              <li>- Máster en Psicología y Psicopatología Perinatal e Infantil</li>
+              <li>- Máster en Psicología General Sanitaria</li>
+              <li>- Experto en psicoterapia emocional sistémica infantojuvenil y familiar</li>
+              
+            </ul>
+            <h3>Experiencia:</h3>
+            <ul>
+              <li>- Trabajos que he tenido.</li>
+            </ul>
+          </h3>
+        </div>
+      </div>  
+</section>
+
+<section class="services">
+  <div class="content">
+    <div class="top-content">
+       <h2>¿En qué áreas puedo ayudarte?</h2>
+       <div class="card-area">
+        <div class="card">
+            <p>test</p>
+        </div>
+        <div class="card">
+            <p>test</p>
+        </div>
+        <div class="card">
+            <p>test</p>
+        </div>
+        <div class="card">
+            <p>test</p>
+        </div>
+       </div>
+    </div>
+    <div class="bottom-content">
+        <h2>¿Cómo lo haremos?</h2>
+        <div>
+            
+        </div>
+    </div>
 </div>
+</section>
+<section class="contact">
+  <div class="content">
+    <h2>Ponte en contacto conmigo</h2>
+    <div class="icons">
+      <div class="icon-info">
+          <i class="pi pi-whatsapp"></i>
+          <span>695847154</span>
+      </div>
+      <div class="icon-info">
+          <i class="pi pi-envelope"></i>
+          <span>email&#64;email.com</span>
+      </div>
+      <div class="icon-info">
+          <i class=" pi pi-instagram"></i>
+          <span>instagram.name</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class>
-  <!-- <button>
-    <a
-      class="qlwapp-toggle"
-      data-action="open"
-      data-phone="34676096151"
-      data-message="¡Hola!"
-      role="button"
-      tabindex="0"
-      target="_blank"
-      href="https://web.whatsapp.com/send?phone=34676096151&amp;text=¡Hola!"
-    >
-    <i class="pi pi-whatsapp"></i><span>Contacta</span>
-    </a>
-  </button> -->
+  
 
+  
+  
+  
+<div class="contact-whastapp">
   <button class="whatsapp-button">
     <a
       class="qlwapp-toggle"
@@ -33,10 +113,9 @@
       tabindex="0"
       target="_blank"
       href="https://web.whatsapp.com/send?phone=34999999999&amp;text=¡Hola!"
-    >
+      >
       <i class="pi pi-whatsapp"></i>
       <span>Contacta</span>
     </a>
   </button>
 </div>
-<router-outlet></router-outlet>

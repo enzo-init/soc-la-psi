@@ -45,4 +45,8 @@ export class AppComponent {
       }
     }
   }
+
+  onActivate(event: any) {
+    console.log(event);
+  }
 }
