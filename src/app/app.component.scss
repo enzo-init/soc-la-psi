@@ -1,6 +1,8 @@
 .home {
-  background-color: #3e6eb0; /* Azul oscuro */
+  background-color: #a4c3c3;
   padding: 50px;
+  color: white;
+  font-family: 'CustomFontSecondary';
   .content {
     display: flex;
     flex-direction: column;
@@ -9,8 +11,8 @@
     height: 94vh;
     .name {
         font-size: 3vw;
-    }
-    
+        font-family: 'CustomFont';
+    }    
     .description {
         display: flex;
         flex-direction: row;
@@ -23,60 +25,104 @@
   }
 }
 .personal-info {
-  background-color: #4d8ec5; /* Azul medio */
+  background-color: #eaf4f4;
+  color: #5a6b6b;
+  font-family: 'CustomFontSecondary';
   .content {
     height: 80vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     justify-items: center;
     align-items: center;
     padding: 3vw;
+    padding-left: 11vw;
+    padding-right: 11vw;
     .personal-info-1, .personal-info-2 {
         font-size: 1vw;
     }
 }
 }
 .services {
-  background-color: #6aa0d3; /* Azul claro */
+  background-color: #a4c3c3;
+  font-family: 'CustomFontSecondary';
   .content {
-    height: 80vh;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     justify-items: center;
     align-items: center;
     padding: 3vw;
-    .top-content, .bottom-content {
-        font-size: 1vw;
+    .top-content {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        h1 {
+          color: white;
+          font-size: 2.3vw;
+        }
+        h2 {
+          font-size: 1.5vw;
+        }
     }
     .top-content {
         .card-area {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             grid-column-gap: 3vw;
-            grid-row-gap: 0px;
-            width: 100%;
+            grid-row-gap: 3vw;
+            width: 50%;
             height: 100%;
             .card {
-                border: solid 1px;
+                background-color: #eaf4f4;
+                border: solid 1px color(white);
+                color: #5a6b6b;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                .text-list {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  .custom-spam{
+                    margin-top: 16px;
+                  }
+                }
             }
         }
     }
 }
 }
+
+.stepper-zone {
+  font-family: 'CustomFontSecondary';
+  .bottom-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eaf4f4;
+    color: #5a6b6b;
+    h1 {
+      font-size: 2.3vw;
+    }
+}
+}
 .contact {
-  background-color: #a8c5e1; /* Azul muy claro */
+  font-family: 'CustomFontSecondary';
+  background-color: #a4c3c3; /* Azul muy claro */
+  color: white;
   .content {
     display: flex;
     flex-direction: column;
@@ -108,14 +154,13 @@
 }
 //texts
 h1, h2, h3 {
-  color: #ffffff; /* Letras blancas */
+  //color: #ffffff; /* Letras blancas */
 }
 p {
-  font-size: 16px;
   line-height: 1.6;
 }
 a {
-  color: #ffffff; /* Letras blancas */
+  //color: #ffffff; /* Letras blancas */
   text-decoration: none;
 }
 //animations
