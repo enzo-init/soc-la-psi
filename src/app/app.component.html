@@ -1,7 +1,7 @@
 <section class="home">
   <div class="content">
     <div class="name">
-      <h1>SOFIA CAMILO PSICOLOGIA</h1>
+      <h1>Sofía Camilo Psicología</h1>
     </div>
     <div class="description">
       <h2>Desarrollo infantil</h2>
@@ -13,38 +13,41 @@
 
 <section class="personal-info">
   <div class="content">
-    <div>
-      IMAGEN
-    </div>
+    <div>IMAGEN</div>
     <div class="personal-info-1">
-      <h2>¿Quien soy?</h2>
+      <h2>Quien soy</h2>
       <h3>
-        Mi nombre es Sofía, soy psicóloga general sanitaria (Col. Nº G-5477) y mi especialidad se
-        centra en la población pediátrica y adolescente, también en el trabajo familiar y
-        psicoterapéutico.
-              Me apasiona la psicología, especialmente el desarrollo infantil y el acompañamiento emocional
-              tan importante y necesario a realizar con todas aquellas familias que lleguen a mí.
-          </h3>
-          <h2>Experiencia y formación</h2>
-          <h3>
-            Si quieres saber un poco más acerca de mi experiencia y formación, aquí tienes algunos datos:
-            <h3>Formación:</h3>
-            
-            <ul>
-              <li>- Máster en Psicología y Psicopatología Perinatal e Infantil</li>
-              <li>- Máster en Psicología General Sanitaria</li>
-              <li>- Experto en psicoterapia emocional sistémica infantojuvenil y familiar</li>
-            </ul>
-          </h3>
-        </div>
-      </div>  
+        Mi nombre es Sofía, soy psicóloga general sanitaria (Col. Nº G-5477) y
+        mi especialidad se centra en la población pediátrica y adolescente,
+        también en el trabajo familiar y psicoterapéutico. Me apasiona la
+        psicología, especialmente el desarrollo infantil y el acompañamiento
+        emocional tan importante y necesario a realizar con todas aquellas
+        familias que lleguen a mí.
+      </h3>
+      <h2>Experiencia y formación</h2>
+      <h3>
+        Si quieres saber un poco más acerca de mi experiencia y formación, aquí
+        tienes algunos datos:
+        <h3>Formación:</h3>
+
+        <ul>
+          <li>- Máster en Psicología y Psicopatología Perinatal e Infantil</li>
+          <li>- Máster en Psicología General Sanitaria</li>
+          <li>
+            - Experto en psicoterapia emocional sistémica infantojuvenil y
+            familiar
+          </li>
+        </ul>
+      </h3>
+    </div>
+  </div>
 </section>
 
 <section class="services">
   <div class="content">
     <div class="top-content">
-       <h1>¿En qué áreas puedo ayudarte?</h1>
-       <div class="card-area">
+      <h1>En qué áreas puedo ayudarte</h1>
+      <div class="card-area">
         <div class="card">
           <h2>Desarrollo infantil</h2>
           <div class="text-list">
@@ -73,22 +76,34 @@
           <h2>Terapia online</h2>
           <div class="text-list">
             <span class="custom-spam">Si lo prefieres, también podemos</span>
-            <span>realizar sesiones online</span>                 
+            <span>realizar sesiones online</span>
           </div>
         </div>
-       </div>
+      </div>
     </div>
-
-</div>
+  </div>
 </section>
 
 <section class="stepper-zone">
   <div class="bottom-content">
-    <h1>¿Cómo lo haremos?</h1>
-    <div>
-        stepper donde se vean los 3 pasos y separar en otra seccion
+    <h1>Cómo lo haremos</h1>
+  <div class="tab">
+    <div class="tab-controller">
+      @for (tab of tabs; track $index) {
+        <div class="tab-header" (click)="changeTabContent($index)">
+          <h2 [ngClass]="tab.active ? 'selected-h2':'unselected-h2'">{{tab.tabName}}</h2>
+        </div>  
+        }
     </div>
-</div>
+    <div class="tab-content">
+      @for (tab of tabs; track $index) {
+        @if (tab.active) {
+            <h2>{{tab.tabContent}}</h2>
+          }
+        }
+    </div>
+    </div>
+  </div>
 </section>
 
 <section class="contact">
@@ -96,26 +111,21 @@
     <h2>Ponte en contacto conmigo</h2>
     <div class="icons">
       <div class="icon-info">
-          <i class="pi pi-whatsapp"></i>
-          <span>695847154</span>
+        <i class="pi pi-whatsapp"></i>
+        <span>695847154</span>
       </div>
       <div class="icon-info">
-          <i class="pi pi-envelope"></i>
-          <span>email&#64;email.com</span>
+        <i class="pi pi-envelope"></i>
+        <span>email&#64;email.com</span>
       </div>
       <div class="icon-info">
-          <i class=" pi pi-instagram"></i>
-          <span>instagram.name</span>
+        <i class="pi pi-instagram"></i>
+        <span>instagram.name</span>
       </div>
     </div>
   </div>
 </section>
 
-  
-
-  
-  
-  
 <div class="contact-whastapp">
   <button class="whatsapp-button">
     <a
@@ -126,8 +136,8 @@
       role="button"
       tabindex="0"
       target="_blank"
-      href="https://web.whatsapp.com/send?phone=34999999999&amp;text=¡Hola!"
-      >
+      href="https://web.whatsapp.com/sendphone=34999999999&amp;text=¡Hola!"
+    >
       <i class="pi pi-whatsapp"></i>
       <span>Contacta</span>
     </a>

@@ -1,14 +1,17 @@
 .home {
-  background-color: #a4c3c3;
-  padding: 50px;
-  color: white;
+  //padding: 50px;
+  color: #385c5c;
   font-family: 'CustomFontSecondary';
+  background: url('../assets/LOGO\ 1\ \(2\).png') no-repeat center center;
+  background-size:cover;
+  background-color: #ffffff;
+  
   .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 94vh;
+    height: 100vh;
     .name {
         font-size: 3vw;
         font-family: 'CustomFont';
@@ -28,6 +31,7 @@
   background-color: #eaf4f4;
   color: #5a6b6b;
   font-family: 'CustomFontSecondary';
+  height: 100vh;
   .content {
     height: 80vh;
     display: grid;
@@ -75,12 +79,13 @@
     .top-content {
         .card-area {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-column-gap: 3vw;
             grid-row-gap: 3vw;
             width: 50%;
             height: 100%;
+            justify-items: center;
             .card {
                 background-color: #eaf4f4;
                 border: solid 1px color(white);
@@ -89,7 +94,11 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
                 padding: 20px;
+                height: 40vh;
+                width: 25vw;
+                font-size: 1vw;
                 .text-list {
                   display: flex;
                   flex-direction: column;
@@ -106,16 +115,59 @@
 
 .stepper-zone {
   font-family: 'CustomFontSecondary';
+  background-color: #eaf4f4;
+  color: #5a6b6b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15vh;
+    .tab-controller{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      }
+    .tab-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+
+      .selected-h2 {
+        color: #5a6b6b;
+        font-weight:  900;
+        text-shadow: 0 10px 10px #a8dcc2; /* sombra con color rgba para transparencia */
+        transform: scale(1.1); /* escala para efecto de zoom */
+        font-size: 1.7vw;
+      }
+      }
+    .tab-header:hover {
+      text-shadow: 0 10px 10px #a8dcc2; /* sombra con color rgba para transparencia */
+      transform: scale(1.1); /* escala para efecto de zoom */
+    }
+    .tab-content {
+      width: 60%;
+      margin-top: 5vh;
+    }
+  }
   .bottom-content {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #eaf4f4;
-    color: #5a6b6b;
     h1 {
       font-size: 2.3vw;
+    }
+    h2 {
+      font-size:  1.3vw;
     }
 }
 }
@@ -152,6 +204,11 @@
         }
     }
 }
+//stepper zone
+.tab-controller {
+  width: 50%;
+}
+//stepper zone off
 //texts
 h1, h2, h3 {
   //color: #ffffff; /* Letras blancas */

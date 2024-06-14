@@ -21,32 +21,28 @@ export class AppComponent {
   url!: string;
   activeTab: number = 0;
   loaded: boolean = false;
+  tabs = [
+    {tabName:'Primer contacto', tabContent: `Tendremos una llamada en la que nos conoceremos y podrás
+explicarme cuáles son tus necesidades. Así podremos marcar la hoja de ruta para iniciar
+nuestro camino.`, active: true},
+    {tabName:'Evaluación', tabContent: `Agendaremos una primera entrevista en la que comenzaremos un proceso de evaluación
+para posteriormente comentar los resultados.`, active: false},
+    {tabName:'Intervención', tabContent: `Una vez que conozcamos y analicemos las necesidades que te han traído hasta aquí,
+plantearemos juntos/as los objetivos terapéuticos y la intervención.`, active: false},
+  ]
+items: any;
 
   constructor (private router: Router) {
   }
   
   ngOnInit(): void {
-    this.router.events.subscribe((event: any) => {
-      if(event instanceof NavigationEnd) {
-          this.url = event.url;
-          this.checkTab(this.navigateMenu,this.url);
-      }
+
+  }
+
+  changeTabContent(tabIndex: number) {    
+    this.tabs.forEach((tab, index:number)=>{
+      index == tabIndex ? tab.active = true : tab.active = false;
     })
   }
-  
-  navigateView(event: any) {
-    this.router.navigate([this.navigateMenu[event.index]]);
-  }
 
-  checkTab(object: any, url: string) {
-    for (const [key,val] of Object.entries(object)) {
-      if ('/'+val === url) {
-        this.activeTab = Number(key);
-      }
-    }
-  }
-
-  onActivate(event: any) {
-    console.log(event);
-  }
 }
