@@ -79,11 +79,11 @@
     .top-content {
         .card-area {
             display: grid;
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-column-gap: 3vw;
             grid-row-gap: 3vw;
-            width: 50%;
+            width: 60%;
             height: 100%;
             justify-items: center;
             .card {
@@ -219,6 +219,9 @@ p {
 a {
   //color: #ffffff; /* Letras blancas */
   text-decoration: none;
+}
+ul {
+  list-style-type: none;
 }
 //animations
 .home {
