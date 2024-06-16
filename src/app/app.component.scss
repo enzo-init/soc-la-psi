@@ -118,18 +118,24 @@
             }
             .familiar {
               background: url('../assets/acompañamiento\ familiar.png') no-repeat;
-              background-position: right 50% bottom 50%;
+              background-position: right 50% bottom 100%;
               background-size: 50vh;
             }
             .psicoterapia {
               background: url('../assets/psicotearia.png') no-repeat;
               background-position: right 50% bottom -35%;
               background-size: 43vh;
+              .text-list {
+                margin-top: 5vh;
+              }
             }
             .online {
               background: url('../assets/acom-online.png') no-repeat;
-              background-position: right 34% bottom 50%;
+              background-position: right 34% bottom 130%;
               background-size: 50vh;
+              .text-list {
+                margin-top: 5vh;
+              }
             }
             .card {
               background-color: #eaf4f4;
