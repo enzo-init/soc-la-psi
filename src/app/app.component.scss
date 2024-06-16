@@ -45,10 +45,9 @@
     padding: 3vw;
     padding-left: 11vw;
     padding-right: 11vw;
-    img {
-      width: 100% ;
-      height: 100%;
-    }
+    img{
+      width: 35vw;
+    }   
     .personal-info-1, .personal-info-2 {
         font-size: 1vw;
     }
@@ -349,6 +348,9 @@ ul {
       display: flex;
       flex-direction: column;
       padding: 5vw;
+      img{
+        width: 80vw;
+      } 
       
       .personal-info-1, .personal-info-2 {
           font-size: 4vw; /* Increased font size for mobile */
@@ -387,20 +389,20 @@ ul {
               }
           }
           .infantil {
-            background-position: right 0% bottom 0% !important;
+            background-position: right 0% bottom -4% !important;
             background-size: 42vh !important;
           }
           .familiar {
             background-position: right 50% bottom 50%;
-            background-size: 50vh;
+            background-size: 42vh !important;
           }
           .psicoterapia {
-            background-position: right 50% bottom 50%;
-            background-size: 50vh;
+            background-position: right 57% bottom 57%!important;
+            background-size: 39vh !important;
           }
           .online {
-            background-position: right 34% bottom 50%;
-            background-size: 50vh;
+            background-position: right 91% bottom 94% !important;
+            background-size: 37vh !important;
           }
       }
     }
