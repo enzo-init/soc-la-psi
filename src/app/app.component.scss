@@ -2,8 +2,9 @@
   //padding: 50px;
   color: #385c5c;
   font-family: 'CustomFontSecondary';
-  background: url('../assets/LOGO\ 1\ \(2\).png') no-repeat center center;
-  background-size:cover;
+  background: url('../assets/logo-center.png') no-repeat;
+  background-position: center;
+  background-size: 100vh;
   background-color: #ffffff;
   
   .content {
@@ -288,8 +289,9 @@ ul {
   .home {
     color: #385c5c;
     font-family: 'CustomFontSecondary';
-    background: url('../assets/LOGO\ 1\ \(2\).png') no-repeat center center;
-    background-size: cover;
+    background: url('../assets/logo-center.png') no-repeat;
+    background-position: center;
+    background-size: 45vh;
     background-color: #ffffff;
     
     .content {
