@@ -56,19 +56,16 @@
 .services {
   background-color: #a4c3c3;
   font-family: 'CustomFontSecondary';
+  height: 140vh;
   .content {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     justify-items: center;
-    align-items: center;
-    padding: 3vw;
     .top-content {
         width: 100%;
-        height: 100%;
+        height: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -85,20 +82,19 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 3vw;
-            grid-row-gap: 3vw;
             width: 60%;
             height: 100%;
+            row-gap: 5%;
+            column-gap: 2%;
             justify-items: center;
             .card {
-                border: solid 1px color(white);
                 color: #5a6b6b;
                 border-radius: 10px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 padding: 20px;
-                height: 40vh;
+                height: 90%;
                 width: 25vw;
                 font-size: 1vw;
                 .text-list {
@@ -113,28 +109,28 @@
             }
             .infantil {
               background: url('../assets/desarrollo-infantil.png') no-repeat;
-              background-position: right 0% bottom 0%;;
-              background-size: 60vh;
+              background-position: right 5.7vw bottom 0vw;
+              background-size: 79%;
             }
             .familiar {
               background: url('../assets/acompañamiento\ familiar.png') no-repeat;
-              background-position: right 50% bottom 100%;
-              background-size: 50vh;
+              background-position: right 3vw bottom -2.4vw;
+              background-size: 79%;
             }
             .psicoterapia {
               background: url('../assets/psicotearia.png') no-repeat;
-              background-position: right 50% bottom -35%;
-              background-size: 43vh;
+              background-position: right 1vw bottom -0.4vw;
+              background-size: 91%;
               .text-list {
-                margin-top: 5vh;
+                margin-top: 8vh;
               }
             }
             .online {
               background: url('../assets/acom-online.png') no-repeat;
-              background-position: right 34% bottom 125%;
-              background-size: 50vh;
+              background-position: right 0.7vw bottom -4vw;
+              background-size: 90%;
               .text-list {
-                margin-top: 5vh;
+                margin-top: 8vh;
               }
             }
             .card {
@@ -367,9 +363,12 @@ ul {
   .services {
     background-color: #a4c3c3;
     font-family: 'CustomFontSecondary';
+    height: 180vh;
+    padding: 3%;
     .content {
-      padding: 5vw;      
+      height: 100%;  
       .top-content {
+        height: 100%;
           h1 {
             font-size: 6vw; /* Increased font size for mobile */
           }
@@ -379,14 +378,15 @@ ul {
       }
       
       .card-area {
-          height: auto;
-          grid-template-columns: 1fr !important;
-          grid-template-rows: auto;
+          display: flex !important;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 0% !important;
           width: 100% !important;
           .card {
+              //height: 40vh;
               width: 70% !important;
               margin-top: 5%;
-              height: auto;
               h2 {
                 font-size: 2vh;
               }
@@ -395,23 +395,23 @@ ul {
               }
           }
           .infantil {
-            background-position: right 100% bottom -4% !important;
-            background-size: 42vh !important;
+            background-position: right -21vw bottom -4vw !important;
+            background-size: 130% !important;
           }
           .familiar {
-            background-position: right 50% bottom -200% !important;
-            background-size: 42vh !important;
+            background-position: right -3vw bottom -9vw !important;
+            background-size: 111% !important;
           }
           .psicoterapia {
-            background-position: right 57% bottom 57%!important;
-            background-size: 39vh !important;
+            background-position: right 59% bottom 62% !important;
+            background-size: 111% !important;
             h2 {
               margin-bottom: 1vh
             }
           }
           .online {
-            background-position: right 91% bottom 15% !important;
-            background-size: 37vh !important;
+            background-position: right -1vw bottom -4vw !important;
+            background-size: 100% !important;
             .text-list {
               margin-top: 3vh !important;
             }
