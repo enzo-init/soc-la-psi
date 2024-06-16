@@ -97,7 +97,6 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
                 padding: 20px;
                 height: 40vh;
                 width: 25vw;
@@ -106,6 +105,7 @@
                   display: flex;
                   flex-direction: column;
                   align-items: center;
+                  margin-top: 3vh;
                   .custom-spam{
                     margin-top: 16px;
                   }
@@ -123,8 +123,8 @@
             }
             .psicoterapia {
               background: url('../assets/psicotearia.png') no-repeat;
-              background-position: right 50% bottom 50%;
-              background-size: 50vh;
+              background-position: right 50% bottom -35%;
+              background-size: 43vh;
             }
             .online {
               background: url('../assets/acom-online.png') no-repeat;
@@ -382,26 +382,29 @@ ul {
               margin-top: 5%;
               height: auto;
               h2 {
-                font-size: 3vh;
+                font-size: 2vh;
               }
               p, span {
                 font-size: 4vw;
               }
           }
           .infantil {
-            background-position: right 0% bottom -4% !important;
+            background-position: right 100% bottom -4% !important;
             background-size: 42vh !important;
           }
           .familiar {
-            background-position: right 50% bottom 50%;
+            background-position: right 50% bottom -200% !important;
             background-size: 42vh !important;
           }
           .psicoterapia {
             background-position: right 57% bottom 57%!important;
             background-size: 39vh !important;
+            h2 {
+              margin-bottom: 1vh
+            }
           }
           .online {
-            background-position: right 91% bottom 94% !important;
+            background-position: right 91% bottom 15% !important;
             background-size: 37vh !important;
           }
       }
