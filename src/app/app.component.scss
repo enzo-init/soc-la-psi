@@ -212,7 +212,7 @@
     }
     .icons {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
         grid-column-gap: 2vw;
         grid-row-gap: 0px;
@@ -463,8 +463,8 @@ ul {
         margin-bottom: 6vh;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-row-gap: 5vw;
-        
+        justify-items: center;
+        grid-row-gap: 5vw;        
         .icon-info {
           display: flex;
           align-items: center;
