@@ -424,7 +424,10 @@ ul {
       
       .tab-header {
         .selected-h2 {
-          font-size: 5vw; /* Increased font size for mobile */
+          font-size: 3vw; /* Increased font size for mobile */
+        }
+        .unselected-h2 {
+          font-size: 2vw;
         }
       }
       
