@@ -131,7 +131,7 @@
             }
             .online {
               background: url('../assets/acom-online.png') no-repeat;
-              background-position: right 34% bottom 130%;
+              background-position: right 34% bottom 125%;
               background-size: 50vh;
               .text-list {
                 margin-top: 5vh;
@@ -412,6 +412,9 @@ ul {
           .online {
             background-position: right 91% bottom 15% !important;
             background-size: 37vh !important;
+            .text-list {
+              margin-top: 3vh !important;
+            }
           }
       }
     }
