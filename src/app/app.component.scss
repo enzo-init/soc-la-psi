@@ -54,25 +54,30 @@
 }
 }
 .services {
-  background-color: #a4c3c3;
+  background-color: #a4c7c3;
   font-family: 'CustomFontSecondary';
+  padding: 40px;
   .content {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-bottom: 80px;
     .top-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 10px;
-        h1 {
-          color: white;
-          font-size: 2.3vw;
-        }
+        width: 55vw;
         h2 {
-          font-size: 1.5vw;
+          color: white;
+          font-size: 2.5vw;
         }
+    }
+    .images {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 45vw;
+      }
     }
     .card-area {
         display: grid;
@@ -101,35 +106,6 @@
                 margin-top: 16px;
               }
             }
-        }
-        .infantil {
-          background: url('../assets/desarrollo-infantil.png') no-repeat;
-          background-size: 23vw 43vh;
-          background-position: 0% 19px;
-        }
-        .familiar {
-          background: url('../assets/acompañamiento\ familiar.png') no-repeat;
-          background-size: 23vw 43vh;
-          background-position: 50% 50px;
-        }
-        .psicoterapia {
-          background: url('../assets/psicotearia.png') no-repeat;
-          background-size: 23vw 44vh;
-          background-position: 58% 26px;
-          .text-list {
-            margin-top: 8vh;
-          }
-        }
-        .online {
-          background: url('../assets/acom-online.png') no-repeat;
-          background-size: 21vw 45vh;
-          background-position: 55% 19px;
-          .text-list {
-            margin-top: 8vh;
-          }
-        }
-        .card {
-          background-color: #eaf4f4;
         }
     }
 }
@@ -238,7 +214,6 @@ ul {
   }
 }
 
-/* Espacio en blanco para visualizar mejor el contenido */
 
 
 .contact-whastapp {
@@ -338,6 +313,7 @@ ul {
     padding: 3%;
     .content {
       .top-content {
+        width: 85vw;
           h1 {
             font-size: 6vw; /* Increased font size for mobile */
           }
@@ -345,44 +321,12 @@ ul {
             font-size: 4vw; /* Increased font size for mobile */
           }
       }
-      .card-area {
-          display: flex !important;
-          flex-direction: column;
-          align-items: center;
-          row-gap: 0% !important;
-          width: 100% !important;
-          .card {
-              width: 70% !important;
-              margin: 20px;
-              h2 {
-                font-size: 2vh;
-              }
-              p, span {
-                font-size: 4vw;
-              }
-          }
-          .infantil {
-            background-size: 84vw 40vh;
-            background-position: 0% 40px;
-          }
-          .familiar {
-            background-size: 84vw 40vh;
-            background-position: 60% 70px;
-          }
-          .psicoterapia {
-            background-size: 84vw 40vh;
-            background-position: 53% 50px;
-            h2 {
-              margin-bottom: 1vh
-            }
-          }
-          .online {
-            background-size: 77vw 33vh;
-            background-position: -46% 101px;
-            .text-list {
-              margin-top: 3vh !important;
-            }
-          }
+      .images {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 90vw;
+        }
       }
     }
   }
