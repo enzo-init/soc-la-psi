@@ -315,7 +315,12 @@ ul {
       } 
       
       .personal-info-1, .personal-info-2 {
-          font-size: 4vw; /* Increased font size for mobile */
+          h1 {
+            font-size: 6vw;
+          }
+          span {
+            font-size: 5vw;
+          }
       }
     }
   }
