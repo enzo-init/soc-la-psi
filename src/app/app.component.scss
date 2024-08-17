@@ -34,9 +34,7 @@
   background-color: #eaf4f4;
   color: #5a6b6b;
   font-family: 'CustomFontSecondary';
-  height: 100vh;
   .content {
-    height: 80vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -51,7 +49,12 @@
       width: 35vw;
     }   
     .personal-info-1, .personal-info-2 {
-        font-size: 1vw;
+      h1 {
+        font-size: 1.8vw;
+      }
+      span {
+        font-size: 1.6vw;
+      }
         a {
           color: #319d94;
         }
@@ -74,50 +77,24 @@
         width: 55vw;
         h1 {
           color: white;
-          font-size: 2.5vw;
+          font-size: 1.8vw;
         }
         span {
           color: white;
-          font-size: 2.5vw;
+          font-size: 1.6vw;
         }
     }
     .images {
-      display: flex;
-      flex-direction: column;
-      img {
-        width: 45vw;
-      }
-    }
-    .card-area {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        row-gap: 50px;
-        column-gap: 50px;
-        justify-items: center;
-        .card {
-            color: #5a6b6b;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            height:40vh;
-            width: 25vw;
-            font-size: 1vw;
-            .text-list {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              margin-top: 3vh;
-              white-space: normal;
-              .custom-spam{
-                margin-top: 16px;
-              }
-            }
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
         }
+      img {
+        width: 35vw;
+      }
     }
-}
 }
 
 .stepper-zone {
