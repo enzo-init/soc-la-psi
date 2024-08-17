@@ -16,10 +16,12 @@
     .name {
         font-size: 3vw;
         font-family: 'CustomFont';
+        color: black
     }    
     .description {
         display: flex;
         flex-direction: row;
+        color: black;
         h2 {
           font-size: 2vw;
           margin:1.5vw;
@@ -50,6 +52,9 @@
     }   
     .personal-info-1, .personal-info-2 {
         font-size: 1vw;
+        a {
+          color: #319d94;
+        }
     }
 }
 }
@@ -67,7 +72,11 @@
         align-items: center;
         margin-bottom: 10px;
         width: 55vw;
-        h2 {
+        h1 {
+          color: white;
+          font-size: 2.5vw;
+        }
+        span {
           color: white;
           font-size: 2.5vw;
         }
@@ -317,7 +326,7 @@ ul {
           h1 {
             font-size: 6vw; /* Increased font size for mobile */
           }
-          h2 {
+          span {
             font-size: 5vw; /* Increased font size for mobile */
           }
       }
