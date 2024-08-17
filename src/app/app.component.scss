@@ -399,13 +399,17 @@ ul {
           display: flex;
           align-items: center;
           justify-content: flex-start;
-            span {
+            span, a {
                 font-size: 4vw; /* Increased font size for mobile */
                 margin-left: 5px;
             }
             i {
                 margin-right: 2vw;
                 font-size: 4vw; /* Increased font size for mobile */
+            }
+            a {
+              text-decoration: none;
+              color: white
             }
         }
     }
