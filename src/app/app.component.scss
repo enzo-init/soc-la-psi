@@ -394,7 +394,8 @@ ul {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
-        grid-row-gap: 5vw;        
+        grid-row-gap: 5vw;  
+        margin-top: 10px;      
         .icon-info {
           display: flex;
           align-items: center;
