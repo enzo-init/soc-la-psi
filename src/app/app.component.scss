@@ -179,12 +179,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            span {
+            span, a {
                 font-size: 1.5vw;
                 margin-left: 10px;
             }
             i {
                 font-size: 1.5vw;
+            }
+            a {
+              text-decoration: none;
+              color: white
             }
         }
     }
