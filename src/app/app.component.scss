@@ -22,7 +22,7 @@
         display: flex;
         flex-direction: row;
         color: black;
-        span {
+        h2 {
           font-size: 2vw;
           margin:1.5vw;
           //cursor: pointer;
@@ -116,8 +116,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  //height: 100vh;
-  //padding:20px;
   padding-top: 40px;
   padding-bottom: 40px;
   h1 {
@@ -133,7 +131,7 @@
     justify-content: center;
     align-items: center;
     h1 {
-      font-size: 2vw;
+      font-size: 1.8vw;
       color: white;
       letter-spacing: 0.8vw;
     }
@@ -144,7 +142,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
     margin-bottom: 20px
   }
 }
@@ -284,7 +282,7 @@ ul {
       .description {
           flex-direction: column; /* Changed direction to column */
           align-items: center;
-          span {
+          h2 {
             font-size: 4vw; /* Increased font size for mobile */
             margin: 2vw 0;
             //cursor: pointer;
@@ -362,12 +360,12 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    //height: 100vh;
-    //padding:20px;
-    padding-bottom: 40px;
     h1 {
       font-size: 6vw;
     }
+    //height: 100vh;
+    //padding:20px;
+    padding-bottom: 40px;
     .header-rectangle {
       background-color: #a4c3c3;
       border-radius: 15px;
@@ -378,7 +376,7 @@ ul {
       justify-content: center;
       align-items: center;
       h1 {
-        font-size:3.5vw;
+        font-size:6vw;
         color: white;
         letter-spacing: 0.8vw;
       }
@@ -389,7 +387,7 @@ ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 3.8vw;
+      font-size: 5vw;
     }
   }
 
@@ -400,7 +398,9 @@ ul {
     
     .content {
       padding: 5vw;
-      font-size: 4vw; /* Increased font size for mobile */
+      h1{
+        font-size: 6vw;
+      }
     }
     
     .icons {
