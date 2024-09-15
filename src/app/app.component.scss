@@ -189,7 +189,7 @@
       justify-content: center;
       img {
         border-radius: 10px;
-        width: 100%;
+        width: 70%;
       }
     }
 }
@@ -406,6 +406,14 @@ ul {
       padding: 5vw;
       h1{
         font-size: 6vw;
+      }
+      .map-image{
+        display: flex;
+        justify-content: center;
+        img {
+          border-radius: 10px;
+          width: 100%;
+        }
       }
     }
     
