@@ -148,7 +148,7 @@
 }
 .contact {
   font-family: 'CustomFontSecondary';
-  background-color: #a4c3c3; /* Azul muy claro */
+  background-color: #a4c3c3;
   color: white;
   .content {
     display: flex;
@@ -179,10 +179,18 @@
                 font-size: 1.5vw;
             }
             a {
-              text-decoration: none;
-              color: white
+              text-decoration: underline;
+              color: rgb(255, 255, 255)
             }
         }
+    }
+    .map-image{
+      display: flex;
+      justify-content: center;
+      img {
+        border-radius: 10px;
+        width: 80%;
+      }
     }
 }
 //stepper zone
@@ -363,8 +371,6 @@ ul {
     h1 {
       font-size: 6vw;
     }
-    //height: 100vh;
-    //padding:20px;
     padding-bottom: 40px;
     .header-rectangle {
       background-color: #a4c3c3;
@@ -423,7 +429,7 @@ ul {
                 font-size: 4vw; /* Increased font size for mobile */
             }
             a {
-              text-decoration: none;
+              text-decoration: underline;
               color: white
             }
         }
