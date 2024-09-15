@@ -187,10 +187,14 @@
     .map-image{
       display: flex;
       justify-content: center;
-      img {
-        border-radius: 10px;
-        width: 70%;
-      }
+      a {
+        display: flex;
+        justify-content: center;
+        img {
+          border-radius: 10px;
+          width: 70%;
+        }
+      } 
     }
 }
 //stepper zone
