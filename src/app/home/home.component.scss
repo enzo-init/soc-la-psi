@@ -294,6 +294,16 @@
       margin-bottom: 20px;
     }
   }
+  .personal-extra-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      color: white;
+      font-size: 1.5vw;
+      margin: 0;
+    }
+  }
   //##mobile version
   /* General adjustments for mobile */
   @media (max-width: 800px) {
@@ -493,6 +503,16 @@
       .image-subvention {
         width: 60%;
         margin-bottom: 20px;
+      }
+    }
+    .personal-extra-info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        color: white;
+        font-size: 2.5vw;
+        margin: 0;
       }
     }
   }  
